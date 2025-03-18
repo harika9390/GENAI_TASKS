@@ -4,8 +4,6 @@ import PyPDF2
 import re
 import json
 import os
-
-
 from dotenv import load_dotenv
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")

@@ -14,7 +14,7 @@ import email_spam
 import summarization
 import sentiment
 import grammar
-import speech
+#import speech
 import text_classification
 import content_generation
 from streamlit_option_menu import option_menu
@@ -33,7 +33,7 @@ with st.sidebar:
             "Summarization",
             "Sentiment Analysis",
             "Text corrector",
-            "Speech to text",
+           # "Speech to text",
             "Text classifier",
             "Content Generator"
         ],
@@ -47,7 +47,7 @@ with st.sidebar:
             "file-text-fill",  # Summarization
             "emoji-frown",  # Sentiment Analysis
             "spellcheck",  # Text Corrector
-            "mic",  # Speech to Text
+            #"mic",  # Speech to Text
             "list-check",  # Text Classifier
             "pencil-square"  # Content Generator
         ]
@@ -72,8 +72,8 @@ elif selected == "Sentiment Analysis":
     sentiment.run()
 elif selected == "Text corrector":
     grammar.run()
-elif selected == "Speech to text":
-    speech.run()
+#elif selected == "Speech to text":
+#    speech.run()
 elif selected == "Text classifier":
     text_classification.run()
 elif selected == "Content Generator":
